@@ -1,0 +1,13 @@
+{
+  "name": "aquarium",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "deploy:worker": "cd backend && npm install && npx wrangler deploy",
+    "deploy:pages": "cd frontend && npm install && npm run build"
+  },
+  "devDependencies": {
+    "wrangler": "^3.80.0"
+  }
+}

@@ -3,7 +3,6 @@ import { makeCard } from "../components/card";
 
 export async function renderSearch(page: HTMLElement, q: string): Promise<void> {
   page.innerHTML = "";
-
   const heading = document.createElement("div");
   heading.className = "section-header";
   heading.innerHTML = `<h2>${q ? `Results for "${q}"` : "Browse"}</h2>`;
