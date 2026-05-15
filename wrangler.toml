@@ -4,12 +4,4 @@ compatibility_date = "2024-10-22"
 compatibility_flags = ["nodejs_compat"]
 
 [vars]
-ALLOWED_ORIGIN = "aquarium.zimobian.workers.dev"
-
-# Secrets (set via: wrangler secret put API_KEY)
-# API_KEY = ""
-# MIRURO_API_KEY = ""
-
-[[routes]]
-pattern = "api.your-domain.com/*"
-zone_name = "your-domain.com"
+ALLOWED_ORIGIN = "https://aquarium.zimobian.workers.dev"
